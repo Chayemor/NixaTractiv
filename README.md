@@ -4,11 +4,11 @@ When you install and run the site for the first time you´ll see that the databas
 The platform you use to test this, be it Windows or IOs, should not affect your experience. 
 
 ###The screens completed are:
--US01
--US02
--US03
--US04
--API json-server
+- US01
+- US02
+- US03
+- US04
+- API json-server
 
 
 # npm and node version
