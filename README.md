@@ -1,7 +1,15 @@
 #About
-When you install and run the site for the first time youÂ´ll see that the database committed with this project is empty. ThatÂ´s in order for the user to be able to test the entire flow of loading the home screen, schedule an activity and then see it in the home screen. 
+When you install and run the site for the first time you´ll see that the database committed with this project is empty. That´s in order for the user to be able to test the entire flow of loading the home screen, schedule an activity and then see it in the home screen. 
 
-The platform you use to test this, be it Windows or IOs, should not affect your experience.
+The platform you use to test this, be it Windows or IOs, should not affect your experience. 
+
+###The screens completed are:
+-US01
+-US02
+-US03
+-US04
+-API json-server
+
 
 # npm and node version
 ```
@@ -12,7 +20,7 @@ v10.15.0
 ```
 
 # Install
-After you have cloned the repo, `cd` into it and carry out the following commands. If you are curious about the versions or packages that will be installed you can head over to the repoÂ´s [package.json](https://bitbucket.org/Chayemor/nixatractiv/src/master/package.json). 
+After you have cloned the repo, `cd` into it and carry out the following commands. If you are curious about the versions or packages that will be installed you can head over to the repo´s [package.json](https://bitbucket.org/Chayemor/nixatractiv/src/master/package.json). 
 
 ```
 npm install
