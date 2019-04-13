@@ -1,0 +1,40 @@
+.input-group {
+
+  input {
+    height: 56px;
+    border-radius: 10px;
+    border: 0;
+    color: $blue-grey;
+    padding: 20px;
+  }
+
+  .input-group-text {
+    color: $white;
+    width: 56px;
+    border: 0;
+    padding: 0;
+    background: $orange;
+    -webkit-justify-content: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+}
+
+.form-group{
+  .custom-select{
+    height: 56px;
+    margin: 0;
+    border-radius: 10px;
+    border: 0;
+  }
+}
+
+.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle, .btn-secondary {
+  box-shadow: none;
+}

@@ -1,0 +1,65 @@
+//Font Family variables
+$font-family-rift: "rift-soft", sans-serif;
+
+//Import Overrides
+@import './default_overrrides';
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+//HEADER
+nav {
+  height: 80px;
+}
+
+//COMMON
+.section-title {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.section-info {
+  color: $blue-grey;
+  font-size: 14px;
+  font-weight: lighter;
+  padding: 0;
+  margin: 0;
+}
+
+.nixaButton {
+  background: $orange;
+  color: $white;
+  width: 295px;
+  height: 50px;
+  margin-top: 20px;
+  padding:0;
+  border: 1px solid;
+
+  img{
+    width: 30px;
+    margin-right: 10px;
+  }
+  span{
+     font-size: 14px;
+     font-family: $font-family-rift;
+    letter-spacing: 3px;
+  }
+  &.disabled {
+    background: $light-grey;
+    border-color: $blue-green;
+    opacity: 1;
+  }
+  &.btn-secondary:active:focus:hover {
+    background: $orange !important;
+    background-color: $orange !important;
+    color: $white;
+    box-shadow:none;
+  }
+}
+
+//All files
+@import './style_override';
+@import './activity';
+@import './homescreen';

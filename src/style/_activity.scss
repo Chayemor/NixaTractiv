@@ -1,0 +1,36 @@
+.activity-display {
+  height: 182px;
+  position: relative;
+  h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: $blue;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  h3 {
+    font-size: 10px;
+    font-family: $font-family-rift;
+    color: $grey;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .activity-img {
+    height: 107px;
+    margin-bottom: 29px;
+  }
+  .activity-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 82px;
+    width: 45px;
+  }
+}
+
+.activity-icon {
+    margin: auto;
+    padding: 8px;
+    background: $white;
+}

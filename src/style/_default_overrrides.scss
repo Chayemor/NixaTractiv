@@ -1,0 +1,27 @@
+//Override Bootstrap default variables
+$font-family-sans-serif:      "europa", serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  15px;
+$navbar-nav-link-padding-x:         0;
+
+$border-radius:               1rem;
+
+$btn-font-family:             $font-family-rift;
+$btn-font-size:               14px;
+$btn-border-width:            0;
+$btn-border-radius:           2rem;
+
+//Colors
+$black: #1B1C20;
+$grey: #7D8184;
+$mid-grey: #8D8C8C;
+$light-grey: #C8D1D3;
+$lightest-grey: #F0F3F4;
+
+$blue-grey: #6E8CA0;
+$blue: #334856;
+$orange: #D97D54;
+$blue-green: #87BCBF;
+
+$primary: $orange;
