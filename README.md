@@ -1,7 +1,14 @@
 #About
-When you install and run the site for the first time you´ll see that the database committed with this project is empty. That´s in order for the user to be able to test the entire flow of loading the home screen, schedule an activity and then see it in the home screen. 
+When you install and run the site for the first time you'll see that the 
+database committed with this project is empty. That's in order for the
+user to be able to test the entire flow of loading the home screen, 
+schedule an activity and then see it in the home screen. 
 
 The platform you use to test this, be it Windows or IOs, should not affect your experience. 
+
+## Requirements
+
+The requirements were obtained from react_challenge_specification.pdf
 
 ###The screens completed are:
 - US01
@@ -10,17 +17,8 @@ The platform you use to test this, be it Windows or IOs, should not affect your 
 - US04
 - API json-server
 
-
-# npm and node version
-```
-npm -v
-6.6.0
-node -v
-v10.15.0
-```
-
-# Install
-After you have cloned the repo, `cd` into it and carry out the following commands. If you are curious about the versions or packages that will be installed you can head over to the repo´s [package.json](https://bitbucket.org/Chayemor/nixatractiv/src/master/package.json). 
+# Set up
+After you have cloned the repo, `cd` into it and carry out the following commands. If you are curious about the versions or packages that will be installed you can head over to the repoï¿½s [package.json](https://bitbucket.org/Chayemor/nixatractiv/src/master/package.json). 
 
 ```
 npm install
@@ -53,4 +51,4 @@ You can delete the databse by going to your file [db.json](https://bitbucket.org
 ```
 
 #Testing
-There were no tests coded for this quick turnaround project. Shameful really. 
+TODO 
