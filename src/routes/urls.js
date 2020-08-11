@@ -1,6 +1,6 @@
 import {required} from '../utils/utils';
 
-const base_url = 'http://localhost:3004/';
+const base_url = 'http://0.0.0.0:3004/';
 
 const URLS = {
     'getSchedule' : (date=required(), limit=null) => {

@@ -24,7 +24,7 @@ import spinning_icon_light from '../media/assets/icn_spin_light.svg';
 export default class ScheduleScreen extends Reflux.Component {
     constructor(props) {
         super(props);
-        this.state = {
+        this.state = { // TODO type check whenever any of these re changed
             'activity' : null,
             'duration' : 15,
             'date': null,
@@ -34,7 +34,7 @@ export default class ScheduleScreen extends Reflux.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        if(prevState.new_activity_recorded_toggle != this.state.new_activity_recorded_toggle){
+        if(prevState.new_activity_recorded_toggle !== this.state.new_activity_recorded_toggle){
             this.cleanUpAndClose();
         }
     }
@@ -71,7 +71,7 @@ export default class ScheduleScreen extends Reflux.Component {
 
     onDateChange = (e) => {
       const date = e.target.value; //Otherwise you´d need e.persist()
-      if(date != "" && date != null) {
+      if(date !== "" && date !== null) {
           const date_selected = new Date(date);
           this.setState((prevState, prevProps) => {
               return {'date': dbDateFormat( date_selected)};
@@ -92,8 +92,9 @@ export default class ScheduleScreen extends Reflux.Component {
     render() {
         let disabled = this.state.duration < 15 || this.state.date === null;
         disabled = disabled || this.state.activity === null ? "disabled" : "";
+        let onClickSchedule = disabled ? () => false : this.scheduleActivity;
 
-        const togglePicker = this.state.open_slots == null || this.state.open_slots.length == 0
+        const togglePicker = this.state.open_slots === null || this.state.open_slots.length === 0
             ? <Picker onChange={this.onDateChange} onClickIcon={this.pullOpenSlots}/>
             : this.getSelectOpenSlots() ;
 
@@ -111,7 +112,7 @@ export default class ScheduleScreen extends Reflux.Component {
             <p>When do you want to do this activity?</p>
             {togglePicker}
             <div className="text-center">
-                <NixaButton className={disabled} title="Schedule" onClick={this.scheduleActivity} icon="" />
+                <NixaButton className={disabled} title="Schedule" onClick={onClickSchedule} icon="" />
             </div>
         </Container>);
     }
@@ -143,7 +144,7 @@ class ActivityIcon extends Component {
     };
 
     render() {
-        const selected = this.props.title.toLowerCase() == this.props.selected;
+        const selected = this.props.title.toLowerCase() === this.props.selected;
         const class_style = selected ? 'activity-icon-light' : '';
         return (
             <Col onClick={this.onClick} className={`col-3 text-center activity-icon m-0 p-0 ${this.props.className} ${class_style}`}>

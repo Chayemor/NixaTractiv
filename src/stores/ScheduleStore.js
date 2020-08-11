@@ -18,6 +18,7 @@ export default class StatusStore extends Reflux.Store {
     onGetSchedule = (date = required(), limit = null) => {
         GET(URLS.getSchedule(date, limit))
             .then((responseJson) => {
+                console.log(responseJson);
                 this.setState({'schedule': this._formatSchedule(responseJson)});
             });
     };
@@ -89,7 +90,7 @@ export default class StatusStore extends Reflux.Store {
             }
         }
         // If it´s empty at this point it means the user has nothing scheduled for tomorrow or the following 7 days
-        if (open_slots.length == 0) {
+        if (open_slots.length === 0) {
             let start = this._getTomorrowStartDate(new Date());
             for (let i = 0; i < suggestions_limit; ++i) {
                 open_slots.push(start);

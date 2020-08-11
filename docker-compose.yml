@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+
+  nixatractive:
+    container_name: nixaTractiv
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        APP_ENV: ${APP_ENV:-dev}
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+      - 3004:3004
+    environment:
+      APP_ENV: ${APP_ENV:-dev}
+    tty: true
